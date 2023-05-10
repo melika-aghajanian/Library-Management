@@ -1,0 +1,80 @@
+
+CREATE TABLE Library
+(
+	ID INT PRIMARY KEY,
+	LIB_Name VARCHAR(45),
+	LIB_Address VARCHAR(100),
+	Members_Count INT
+);
+
+CREATE TABLE Librarian
+(
+	ID INT PRIMARY KEY ,
+	Personnal_ID INT,
+	L_Name VARCHAR(45) ,
+	L_Phone VARCHAR(45),
+	Head_ID INT FOREIGN KEY REFEReNCES Librarian(ID)
+);
+
+CREATE TABLE Section 
+(
+	ID INT NOT NULL PRIMARY KEY ,
+	S_Name VARCHAR(45) ,
+	Manager INT FOREIGN KEY REFERENCES Librarian(ID)
+);
+
+CREATE TABLE Writer
+(
+	ID INT PRIMARY KEY,
+	W_Name VARCHAR(45),
+	W_Phone VARCHAR(45)
+);
+
+CREATE TABLE Translator
+(
+	ID INT PRIMARY KEY,
+	T_Name VARCHAR(45),
+	T_Phone VARCHAR(45)
+);
+
+CREATE TABLE Member
+(
+	ID INT PRIMARY KEY,
+	M_Name VARCHAR(45),
+	M_Phone VARCHAR(45),
+	M_Address VARCHAR(100),
+	Membership_Number INT,
+	Registery_Date DATE,
+	Reserved_Book INT
+	M_Image IMAGE
+);
+
+CREATE TABLE TakePart
+(
+	ID INT PRIMARY KEY,
+	Library_ID INT FOREIGN KEY REFERENCES Library(ID),
+	Member_ID INT FOREIGN KEY REFERENCES Member(ID)
+);
+
+CREATE TABLE Book
+(
+	ID INT PRIMARY KEY,
+	B_Name VARCHAR(45),
+	Publisher_Name VARCHAR(45),
+	Publish_Date DATE,
+	B_Status VARCHAR(45),
+	Librarian_ID INT FOREIGN KEY REFERENCES Librarian(ID),
+	Section_ID INT FOREIGN KEY REFERENCES Section(ID),
+	Writer_ID INT FOREIGN KEY REFERENCES Writer(ID),
+	Translator_ID INT FOREIGN KEY REFERENCES Translator(ID)
+);
+
+CREATE TABLE Borrow
+(
+	ID INT PRIMARY KEY,
+	Librarian_ID INT FOREIGN KEY REFERENCES Librarian(ID),
+	Member_ID INT FOREIGN KEY REFERENCES Member(ID),
+	Borrow_Date DATE,
+	Return_Date DATE,
+	Forfeit FLOAT
+);
