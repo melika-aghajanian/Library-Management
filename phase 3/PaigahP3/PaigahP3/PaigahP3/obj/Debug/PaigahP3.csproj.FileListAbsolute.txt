@@ -1,0 +1,13 @@
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.csproj.AssemblyReference.cache
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.Main.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.LibrarianForm.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.LoginForm.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.MemberForm.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.Properties.Resources.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.SearchResult.resources
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.csproj.GenerateResource.cache
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\bin\Debug\PaigahP3.exe
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\bin\Debug\PaigahP3.pdb
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.exe
+D:\Visual Studio 2019\Projects\PaigahP3\PaigahP3\obj\Debug\PaigahP3.pdb
